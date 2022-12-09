@@ -1,0 +1,9 @@
+{% for project in projects%}
+            <div class="project_box grid-item">
+              <h3>{{project["Title"]}}</h3>
+              <h5> {{project["Name"]}}</h5>
+              <p> {{project["Start_date"]}}</p>
+              <p> {{project["Key_learnings"]}}</p>
+              <button> {{project["Link"]}}</button>
+            </div>
+          {% endfor %}
