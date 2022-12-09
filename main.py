@@ -35,7 +35,7 @@ def reptor_homepage():
 
 
 # instead of list create JSON
-@app.route("/projects")  #create new Endpoint
+@app.route("/api/projects")  #create new Endpoint
 def json_projects():
   return jsonify(PROJECTS)
 
