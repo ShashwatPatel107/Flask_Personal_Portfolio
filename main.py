@@ -1,22 +1,9 @@
 from flask import Flask, render_template, jsonify
 # jsonify takes an object and convert to json object
 
+from database import db_project 
+
 app = Flask(__name__)
-
-
-
-from database import engine # *******
-from sqlalchemy import text # *******
-def db_project(): 
-# Starting new connection 
-  with engine.connect() as connection:
-    result = connection.execute(text("SELECT * FROM `projects`"))
-  
-  projects = []
-  for row in result.all():
-    projects.append(dict(row))
-
-  return projects
 
   
 
@@ -35,6 +22,8 @@ def json_projects():
 if __name__ == "__main__":
   app.run(host="0.0.0.0", debug=True)
 
+
+  
   #  *********************************************************
 
 #   from flask_sqlalchemy import SQLAlchemy
