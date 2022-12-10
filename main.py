@@ -3,35 +3,27 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-# Project database
-PROJECTS = [{
-  "Title": "Web-Scraping",
-  "Name": "Scraping Youtube Using Selenium",
-  "Start_date": "Oct-2022",
-  "Key_learnings": ["Python", "Selenium", "BeautifulSoup"],
-  "Link": "WS_colab_URL"
-}, {
-  "Title":
-  "Web-Development",
-  "Name":
-  "Personal_Portfolio_Website",
-  "Start_date":
-  "Nov-2022",
-  "Key_learnings": ["Python", "Flask", "SQL", "HTML/CSS", "JavaScript"],
-  "Link":
-  "WD_Replit_URL"
-}, {
-  "Title": "Data Visualization And Analysis",
-  "Name": "Youtube Trand Analysis",
-  "Start_date": "Nov-2022",
-  "Key_learnings": ["Python", "Excel", "Tableau", "Numpy"],
-  "Link": "DVA_URL"
-}]
 
+
+from database import engine # *******
+from sqlalchemy import text # *******
+def db_project(): 
+# Starting new connection 
+  with engine.connect() as connection:
+    result = connection.execute(text("SELECT * FROM `projects`"))
+  
+  projects = []
+  for row in result.all():
+    projects.append(dict(row))
+
+  return projects
+
+  
 
 @app.route("/")
 def reptor_homepage():
-  return render_template("app.html", projects=PROJECTS)
+  projects = db_project()
+  return render_template("app.html", projects=projects)
 
 
 # instead of list create JSON
