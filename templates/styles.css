@@ -1,3 +1,4 @@
+
 /************      Whole Documents   ********** */
 html, body {
   height: 100%;
@@ -11,11 +12,11 @@ html, body {
   padding:0;  
 }
 body{
-  display: inline-block;
-  background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.9));
-/*   background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://personal-portfolio-website.shashwatpatel5.repl.co/background_image.jpg"); */
+/*   display: inline-block; */
+/*   background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.9)); */
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://flaskpersonalportfolio.shashwatpatel5.repl.co/static/background_image.jpg");
  background-size: cover;
-  repeat: no-repeat
+  repeat: no-repeat;
   position: absolute;
   z-index:-1;
 }
@@ -28,7 +29,7 @@ body{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 15vw;
+    width: 20vw;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
@@ -94,7 +95,7 @@ a:-webkit-any-link {
 /* Main Page */
 #main_content_pane{
 /*   border: 3px solid black; */
-  margin-left:16vw;
+  margin-left:15vw;
   width:76vw;  
   color: white;
 }
@@ -124,13 +125,13 @@ a:-webkit-any-link {
 
 /* Other Page common */
 .left_pane{
-  border: 1px solid blue;
+  border: 0px solid blue;  /*  *********** BORDER  ***** */
   margin: 8rem auto auto 10vw;
   width: 25vw;
   height: 100vh;
 }
 .right_pane{
-  border: 1px solid yellow;
+/*   border: 0px solid yellow; /*  *********** BORDER  ***** */ */
   margin: 2rem 10vw auto 1rem;
   height: 100vh;
   width:75vw; 
@@ -235,12 +236,65 @@ a:-webkit-any-link {
 
 
 
+
+
+/* projects page */
+#projects_page{
+  display:flex;
+  height:100vh; 
+}
+
+/* leftside headings */
+.project_ls_bullet h3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  color: red;
+  font-size: 20px;
+}
+/* projects ls Bullet List */
+.project_ls_bullet li{
+  font-size: 18px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+
+/* project right side */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+/* project boxes */
+.grid-item {
+  background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.9));
+  border: 2px groove rgba(255, 69, 0, 1);
+  margin: 10px 10px 10px 10px;
+  padding: 20px;
+  text-align: center;
+}
+.project_grid_id&date{
+    display: flex;
+  }
+.project_box h3{
+    color:yellow;
+  }
+
+
+
+
+
+
 /* Contact Page */
 #contact_page{
   display: flex;
   height:100vh;  
 }
+#contact_page_left_pane{
 
+      
+}
 /* contact left buttons */
 #contact_page_left_pane button{
   display: block;
@@ -255,11 +309,7 @@ a:-webkit-any-link {
   border: 2px solid #black
   
 }
-/* hover mouse over button effect */
-#contact_page_left_pane button:hover{  
-  background-color: black;
-  color: white;  
-}
+
 /* contact_rs_heading */
 .content_heading{
   color: red;
@@ -279,7 +329,13 @@ a:-webkit-any-link {
       display: block;
     margin-top: 0em;
 }
+  .submit_button{    
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    text-align: center;
 
-}
-
-
+  }

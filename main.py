@@ -13,6 +13,8 @@ def reptor_homepage():
   return render_template("app.html", projects=projects) 
 
 
+  
+
 # instead of list create JSON
 @app.route("/api/projects")  #create new Endpoint
 def json_projects():
