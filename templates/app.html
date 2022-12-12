@@ -1,174 +1,159 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Shashwat Patel">
-
-  <!--for Bootstrap CSS -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
-    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
-  <!--for Bootstrap CSS -->
-
-
-
-  <meta name="description" content="This is the personal portfolio website for Shashwat Patel.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Shashwat Patel</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link href="styles.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="https://personal-portfolio-website.shashwatpatel5.repl.co/face_image_illustration.png"
-    type="image/x-icon">
-  <script src="https://kit.fontawesome.com/9b80a8324a.js" crossorigin="anonymous"></script>
-
-</head>
-<!-- **************************    Head END Body START ***************   -->
-
-<body>  
-
-  <!-- ************************* COMMON LEFT(NAVIGATION)SIDE  *********** -->
-  <header id="c_left_nav_pane">
-    <div class="left_column_content">
-
-      <div class="profile">
-        <img src="https://flaskpersonalportfolio.shashwatpatel5.repl.co/static/DSC_3792.png" alt=""
-          class="img-fluid rounded-circle img-responsive">
-        <h1 class="profile_name">Shashwat Patel</h1> <!-- link that come to itself -->
-
-
-        <div class="social_links">
-          <a href="https://twitter.com/shashwat_107" class="twitter"> <i class="fa-brands fa-twitter"></i></a>
-<!--           <a href="#" class="facebook"> <i class="fa-brands fa-facebook"></i></a> -->
-          <a href="mailto:Shashwatpatel107.com" class="gmail"> <i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/ShashwatPatel107" class="github"> <i class="fa-brands fa-github"></i></a>
-          <a href="www.linkedin.com/in/shashwat-patel107" class="linkedin"> <i class="fa-brands fa-linkedin-in"></i></a>
-        </div><!-- Social_Media Links -->
-
-      </div><!-- profile -->
-
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#home_page" class="nav-link scrollto active"><i class="fa-solid fa-house"></i> <span>&nbsp;
-                Home</span></a>
-          </li>
-          <li><a href="#about_page" class="nav-link scrollto"><i class="fa-solid fa-user-tie"></i> <span>&nbsp;About
-                Me</span></a>
-          </li>
-          <li><a href="#resume_page" class="nav-link scrollto"><i class="fa-solid fa-file"></i> <span>&nbsp;
-                Resume</span></a>
-          </li>
-          <li><a href="#projects_page" class="nav-link scrollto"><i class="fa-solid fa-book"></i><span>&nbsp;
-                Projects</span></a>
-          </li>
-          <li><a href="#contact_page" class="nav-link scrollto"><i class="fa-solid fa-phone"></i>
-              <span>&nbsp; Contact</span></a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-    <!--Left_Column -->
-  </header>
-
-
-
-
-
-
-  <!-- ************************* COMMON MAIN(RIGHT)SIDE  ************************   -->
-  <div id="main_content_pane" class="main_content_all_common">
-
-
-    <!-- ************  Home Page START ********************   -->
-    <div id="home_page" class="Home_page">
-
-      <img src="https://personal-portfolio-website.shashwatpatel5.repl.co/face_image_illustration.png" alt=""
-        class="profile_img">
-      <h1 id="home_page_heading" class="page_heading ">Shashwat Patel</h1>
-      <p>
-        I'm <span class="home_description">Machine Learning
-          Engineer</span>
-      </p>
-
-      <!--Homepage -->
-    </div>
-
-
-
-
-   <!-- ************    About Page START ********************   -->
-    <div id="about_page" class="page" class="page">
-
-      {% include "about.html"%}     
-
-
-      <!--aboutpage -->
-    </div>
-
-
-
-
-    <!-- ************    Resume Page START ********************   -->
-    <div id="resume_page" class="page">
-
-      {% include "resume.html"%}
-
-
-      <!-- resume_page_start -->
-    </div>
-
-
-
-
-
-    <!-- ************    Projects Page START ********************   -->
-    <div id="projects_page" class="page">
-
-      {% include "projects.html"%}
-
-
-      
-
-
-      <!--projectspage -->
-    </div>
-
-
-
-
-  <!-- ************    Contact Page START ********************   -->
-    <div id="contact_page" class="page">
-      
-      {% include "contact.html"%}
-      
-      <!--contact page -->
-    </div>
-
-
-<!--main_content_pane -->
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shashwat Patel">
+    
+    {% include "bootstrap.html"%}
+    
   
+  
+  
+    <meta name="description" content="This is the personal portfolio website for Shashwat Patel.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Shashwat Patel</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://personal-portfolio-website.shashwatpatel5.repl.co/face_image_illustration.png"
+      type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9b80a8324a.js" crossorigin="anonymous"></script>
 
+  </head>
+  <!-- **************************    Head END Body START ***************   -->
 
-
-</body> 
+  <body>  
+  
+    <!-- ************************* COMMON LEFT(NAVIGATION)SIDE  *********** -->
+    <header id="c_left_nav_pane">
+      <div class="left_column_content">
+  
+        <div class="profile">
+          <img src="https://flaskpersonalportfolio.shashwatpatel5.repl.co/static/DSC_3792.png" alt=""
+            class="img-fluid rounded-circle img-responsive">
+          <h1 class="profile_name">Shashwat Patel</h1> <!-- link that come to itself -->
+  
+  
+          <div class="social_links">
+            <a href="https://twitter.com/shashwat_107" class="twitter"> <i class="fa-brands fa-twitter"></i></a>
+  <!--           <a href="#" class="facebook"> <i class="fa-brands fa-facebook"></i></a> -->
+            <a href="mailto:Shashwatpatel107.com" class="gmail"> <i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/ShashwatPatel107" class="github"> <i class="fa-brands fa-github"></i></a>
+            <a href="www.linkedin.com/in/shashwat-patel107" class="linkedin"> <i class="fa-brands fa-linkedin-in"></i></a>
+          </div><!-- Social_Media Links -->
+  
+        </div><!-- profile -->
+  
+  
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li><a href="#home_page" class="nav-link scrollto active"><i class="fa-solid fa-house"></i> <span>&nbsp;
+                  Home</span></a>
+            </li>
+            <li><a href="#about_page" class="nav-link scrollto"><i class="fa-solid fa-user-tie"></i> <span>&nbsp;About
+                  Me</span></a>
+            </li>
+            <li><a href="#resume_page" class="nav-link scrollto"><i class="fa-solid fa-file"></i> <span>&nbsp;
+                  Resume</span></a>
+            </li>
+            <li><a href="#projects_page" class="nav-link scrollto"><i class="fa-solid fa-book"></i><span>&nbsp;
+                  Projects</span></a>
+            </li>
+            <li><a href="#contact_page" class="nav-link scrollto"><i class="fa-solid fa-phone"></i>
+                <span>&nbsp; Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+  
+      </div>
+      <!--Left_Column -->
+    </header>
+    
+  
+  
+  
+    <!-- ***************** COMMON MAIN(RIGHT)SIDE  **********************   -->
+    <div id="main_content_pane" class="main_content_all_common">
+  
+  
+      <!-- ************  Home Page ********************   -->
+      <div id="home_page" class="Home_page">
+  
+        <img src="https://personal-portfolio-website.shashwatpatel5.repl.co/face_image_illustration.png" alt=""
+          class="profile_img">
+        <h1 id="home_page_heading" class="page_heading ">Shashwat Patel</h1>
+        <p>
+          I'm <span class="home_description">Machine Learning
+            Engineer</span>
+        </p>
+  
+        <!--Homepage -->
+      </div>
+  
+  
+  
+  
+      <!-- ************    About Page  ********************   -->
+      <div id="about_page" class="page" class="page">
+  
+        {% include "about.html"%}     
+  
+  
+        <!--aboutpage -->
+      </div>
+  
+  
+  
+  
+      <!-- ************    Resume Page  ********************   -->
+      <div id="resume_page" class="page">
+  
+        {% include "resume.html"%}
+  
+  
+        <!-- resume_page_start -->
+      </div>
+  
+  
+  
+  
+  
+      <!-- ************    Projects Page  ********************   -->
+      <div id="projects_page" class="page">
+  
+        {% include "projects.html"%}  
+        
+  
+  
+      <!--projectspage -->
+      </div>
+  
+  
+  
+  
+      <!-- ************    Contact Page  ********************   -->
+      <div id="contact_page" class="page">
+        
+        {% include "contact.html"%}
+        
+        <!--contact page -->
+      </div>
+  
+  
+    <!--main_content_pane -->
+    </div>
+    
+  
+  
+  
+  </body> 
 
   
 <!-- /************      CSS    ********** */ -->
-<style>
-  {% include "styles.css"%}
-</style>
+  <style>
+    {% include "styles.css"%}
+  </style>
 
 
 </html>
