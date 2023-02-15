@@ -6,12 +6,10 @@ connection_info = os.environ['CONNECTION_INFO']
 
 
 # args for secure connection
-engine = create_engine(connection_info, connect_args={
-        "ssl": {
+engine = create_engine(connection_info, connect_args={"ssl": {
             "ssl_ca": "/etc/ssl/cert.pem"
         }
     })
-
 
 def db_project(): 
 # Starting new connection 

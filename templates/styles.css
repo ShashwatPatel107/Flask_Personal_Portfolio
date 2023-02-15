@@ -14,13 +14,13 @@ html, body {
 body{
 /*   display: inline-block; */
 /*   background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.9)); */
-  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://flaskpersonalportfolio.shashwatpatel5.repl.co/static/background_image.jpg");
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://flaskpersonalportfolio.shashwatpatel5.repl.co/static/background_image.jpg") ;
  background-size: cover;
   repeat: no-repeat;
   position: absolute;
-  z-index:-1;
+  
+/*   z-index:-1; */
 }
-
 
 
 /* ************   navigation_pane   ********* */
@@ -94,12 +94,18 @@ a:-webkit-any-link {
 /* ************   main_pane   ********* */
 /* Main Page */
 #main_content_pane{
-/*   border: 3px solid black; */
-  margin-left:15vw;
-  width:76vw;  
+/*   border: 3px solid red; */
+  margin-left:35vw;
+  margin-top: 10vw;
+  width:50vw;  
   color: white;
 }
 
+.profile_img{
+  width: 400px;
+  height: 500px;
+  border: 5px solid #2c2f3f;
+}
 
 
 /* Home_page */
@@ -109,7 +115,7 @@ a:-webkit-any-link {
   text-align: center;
   height: 100vh;
   vertical-align: middle;
-/*   border: 2px solid red; */
+  border: 2px solid red;
 }
 #home_page img{
   border-radius: 25%;
@@ -171,8 +177,9 @@ a:-webkit-any-link {
  #about_subsection{
   font-size:20px;
   padding-top: 2em;
-   padding-left: 1em;
+  padding-left: 1em;
   line-height: 1.6;
+  column-count: 2;
 }
 
 
@@ -183,11 +190,7 @@ a:-webkit-any-link {
   display: flex;
   height:100vh;  
 }
-/* resume image */
-.resume_ls_img{
-  max-width:13vw;
-  text-align: center;  
-}
+
 /* reasume name */
 .resume_name{
   font-size: 40px;
