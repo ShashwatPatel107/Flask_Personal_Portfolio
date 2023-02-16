@@ -3,7 +3,6 @@ import sqlalchemy
 from sqlalchemy import create_engine, engine, text
 # connect to my sql with sqlalchemy
 
-
 # database information goes here
 # HOST, USER, Pass
 connection_string = "mysql+pymysql://50tw8c2rvl6qzgut2xrw:pscale_pw_lFhP4LmriCPcBFAevspt9B6d2zaTBay9tlVVN40gFZ0@us-east.connect.psdb.cloud/shashwat_projects?charset=utf8mb4"

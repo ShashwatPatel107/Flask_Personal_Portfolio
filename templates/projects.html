@@ -1,35 +1,23 @@
 <!-- ************  projects Left-side ********************   -->
-      <div id="projects_left_pane" class="left_pane" class="projects_left_side">
-        <ul class="project_ls_bullet">
-          <h3> Languages</h3>
-          <li>Python</li>
-          <li>HTML</li>
-          <li>Java Script</li>
-          <li>SQL</li>
-        </ul>
-
-        <!-- projects_left_side -->
-      </div>
 
 
       <!-- ************    projects Right-side ********************   -->
-      <div id="projects_right_pane" class="right_pane" class="projects_right_side">
-        <h1 id="projects_page_heading" class="page_heading">PROJECTS</h1>
-        <h3 id="projectst_content_heading" class="content_heading">Projects</h3>
+<div id="projects_right_pane" class="right_pane" class="projects_right_side">
+<h1 id="projects_page_heading" class="page_heading">PROJECTS</h1>
 
         <div class="project_main grid-container">
           {% for project in projects%}
             <div class="project_box grid-item">
               <div class="col-md-6 pro_ID">
-                <p> {{project["Pro_ID"]}}</p>
+                <p> {{project["Project_ID"]}}</p>
                 </div>
               <div class="col-md-6 pro_date">
-                <p> {{project["Start_date"]}}</p>                 
+                <p> {{project["Start_Date"]}}</p>                 
               </div>
               
               
-              <h3>{{project["Title"]}}</h3>
-              <h5> {{project["Name"]}}</h5>                   
+              <h3>{{project["Topic"]}}</h3>
+              <h5> {{project["Title"]}}</h5>                   
               <p class="pro_learning"> {{project["Learning"]}}</p>
               <a class="btn btn-info" href='{{project["Link"]}}' target="_blank">View</a>
             </div>

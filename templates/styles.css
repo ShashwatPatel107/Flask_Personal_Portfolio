@@ -115,7 +115,7 @@ a:-webkit-any-link {
   text-align: center;
   height: 100vh;
   vertical-align: middle;
-  border: 2px solid red;
+/*   border: 2px solid red; */
 }
 #home_page img{
   border-radius: 25%;
@@ -268,7 +268,11 @@ a:-webkit-any-link {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
+/*   margin-left:35vw; */
+/*   margin-top: 10vw; */
+  width:50vw;
 }
+
 /* project boxes */
 .grid-item {
   background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(0, 0, 0, 0.9));
@@ -340,5 +344,15 @@ a:-webkit-any-link {
     transition: 0.4s;
     border-radius: 4px;
     text-align: center;
-
   }
+input[type = "text"]:focus, textarea:focus {
+border :3px solid blue 
+}
+
+testarea::-webkit-scrollbar-{
+  width:4px;
+}
+
+testarea::-webkit-scrollbar-thumb {
+  background-color: orange
+}
