@@ -55,13 +55,19 @@ header .profile h1{
   text-align: center;
   font-size: 43px;
 }
+.social_links{
+text-align: center;
+padding: 5px;
+}
+
 /* Social-Media Icons */
  header .social_links a {
   color: white;
   font-size: 20px;
   display: inline;
-   background: #212431;
+  background: #212431;
   justify-content: space-around;
+   
    line-height: 2;
   padding: 10px 10px;
   border-radius: 50%;
