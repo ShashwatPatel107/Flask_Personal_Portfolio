@@ -100,6 +100,10 @@ a:-webkit-any-link {
 /* ************   main_pane   ********* */
 /* Main Page */
 #main_content_pane{
+
+
+
+  
 /*   border: 3px solid red; */
   margin-left:35vw;
   margin-top: 10vw;
@@ -314,7 +318,7 @@ a:-webkit-any-link {
   position: relative;
   width: 80%;
   text-align: center;
-  font-size: 30px;
+  font-size: auto;
   text-decoration: none;
   margin: 10px auto 2px auto;
   cursor: pointer;
