@@ -341,9 +341,9 @@ a:-webkit-any-link {
 .php-email-form{
   font-size: 25px;
   width: 100%;
-    padding: 30px;    
-    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
-      display: block;
+  padding: 30px;    
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+  display: block;
     margin-top: 0em;
 }
   .submit_button{    
